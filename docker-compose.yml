@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+    mysql:
+        container_name: mysql
+        image: mysql:latest
+        restart: always
+        volumes:
+            - E:/Docker/mysql_home:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - 3306:3306
+        networks: 
+            - net
+    
+networks:
+  net:
