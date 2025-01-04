@@ -20,7 +20,7 @@ services:
       volumes:
         - E:/Docker/pgdata:/var/lib/postgresql/data
       environment:
-        POSTGRES_PASSWORD: "root"
+        POSTGRES_PASSWORD: root
       ports:
         - 5432:5432
       networks: 
